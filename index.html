@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>FreeCodeCamp Survey Form</title>
 </head>
 <body>
-    <h1 id="title">FreeCodeCamp Survey Form</h1>
-    <p id="description">This is a Responsive Web Design certifications build</p>
+    <div class="container">
+        <div class="card">
+        <header class="header">
+            <h1 id="title">FreeCodeCamp Survey Form</h1>
+            <p id="description">This is a Responsive Web Design certifications build</p>
+        </header>
     <form id="survey-form">
+        <div class="form-group">
         <label for="name" id="name-label">Your Name:</label>
         <input
             required
@@ -18,6 +23,8 @@
             type="text"
             placeholder="Name"
         >
+    </div>
+    <div class="form-group">
         <label for="email" id="email-label">Your Email:</label>
         <input
             required
@@ -25,6 +32,8 @@
             placeholder="Your Email"
             type="email"
         >
+    </div>
+    <div class="form-group">
         <label for="number" id="number-label">Age (optional)</label>
         <input
             type="number"
@@ -34,23 +43,38 @@
             max="99"
 
         >
+    </div>
+    <div class="form-group">
+        <p>Where are you from?</p>
         <select name="country" id="dropdown">
             <option value="Sweden">Sweden</option>
             <option value="USA">USA</option>
             <option value="Australia">Australia</option>
         </select>
+    </div>
+    <div class="form-group">
+        <p>Favorite Coding Language</p>
         <input type="radio" id="html" name="fav_language" value="HTML">
         <label for="html">HTML</label><br>
         <input type="radio" id="css" name="fav_language" value="CSS">
-        <label for="html">HTML</label><br>
-
+        <label for="css">CSS</label><br>
+    </div>
+    <div class="form-group">
+        <p>What are you coding on?</p>
         <input type="checkbox" id="macbook" name="macbook" value="MacBook">
         <label for="macbook"> I'm using MacBook</label>
         <input type="checkbox" id="windows" name="windows" value="Windows">
         <label for="windows"> I'm using Windows</label>
+    </div>
+    <div class="form-group">
+        <p>Tell us your story:</p>
         <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-
+    </div>
+    <div class="form-group">
         <button id="submit">Submit</button>
+    </div>
     </form>
+</div>
+</div>
 </body>
 </html>
