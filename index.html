@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>FreeCodeCamp Survey Form</title>
+</head>
+<body>
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">This is a Responsive Web Design certifications build</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Your Name:</label>
+        <input
+            required
+            id="name"
+            type="text"
+            placeholder="Name"
+        >
+        <label for="email" id="email-label">Your Email:</label>
+        <input
+            required
+            id="email"
+            placeholder="Your Email"
+            type="email"
+        >
+        <label for="number" id="number-label">Age (optional)</label>
+        <input
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="18"
+            max="99"
+
+        >
+        <select name="country" id="dropdown">
+            <option value="Sweden">Sweden</option>
+            <option value="USA">USA</option>
+            <option value="Australia">Australia</option>
+        </select>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="html">HTML</label><br>
+
+        <input type="checkbox" id="macbook" name="macbook" value="MacBook">
+        <label for="macbook"> I'm using MacBook</label>
+        <input type="checkbox" id="windows" name="windows" value="Windows">
+        <label for="windows"> I'm using Windows</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+
+        <button id="submit">Submit</button>
+    </form>
+</body>
+</html>
